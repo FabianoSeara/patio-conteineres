@@ -1,4 +1,4 @@
-# 📦 Sistema de Controle de Pátio de Contêineres
+ 📦 Sistema de Controle de Pátio de Contêineres
 
 Sistema de linha de comando (CLI) para gerenciar a movimentação e o
 armazenamento de contêineres em um pátio portuário: cadastro, busca,
@@ -10,7 +10,7 @@ onde já geri controles de pátio manualmente em planilhas. A proposta aqui
 foi recriar esse processo como uma aplicação real, aplicando lógica de
 programação e banco de dados.
 
-## Funcionalidades
+ Funcionalidades
 
 - Cadastro de contêineres (número, tipo, cliente/navio, posição no pátio)
 - Listagem com filtro por status
@@ -19,22 +19,22 @@ programação e banco de dados.
 - Movimentação entre bloco/fileira/andar
 - Estatísticas: total de contêineres, distribuição por status e ocupação por bloco
 
-## Tecnologias
+ Tecnologias
 
-- **Python 3** (sem dependências externas)
-- **SQLite** (banco de dados local, via módulo `sqlite3` da biblioteca padrão)
+- Python 3 (sem dependências externas)
+- SQLite (banco de dados local, via módulo `sqlite3` da biblioteca padrão)
 
-## Estrutura do projeto
+ Estrutura do projeto
 
 ```
 patio-conteineres/
- main.py          # Menu do terminal (interação com o usuário)
- operacoes.py      # Regras de negócio (cadastrar, buscar, atualizar...)
- database.py        # Conexão e criação da tabela no SQLite
+ main.py           Menu do terminal (interação com o usuário)
+ operacoes.py       Regras de negócio (cadastrar, buscar, atualizar...)
+ database.py         Conexão e criação da tabela no SQLite
  README.md
 ```
 
-## Como rodar
+ Como rodar
 
 Não precisa instalar nenhuma dependência — só Python 3.
 
@@ -62,7 +62,7 @@ O banco de dados (`patio.db`) é criado automaticamente na primeira execução.
 ==================================================
 ```
 
-## Próximos passos
+ Próximos passos
 
 - [ ] Exportar relatórios em CSV
 - [ ] Adicionar histórico de movimentações por contêiner
